@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="Build\Build.props" />
 	<ItemGroup>
-		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.IdentityModel" Version="6.1.7600.16394" />
 	</ItemGroup>
 	<ItemGroup>
@@ -10,9 +12,9 @@
 		</CodeAnalysisDictionary>
 	</ItemGroup>
 	<ItemGroup>
-	  <Reference Include="System.Configuration" />
-	  <Reference Include="System.IdentityModel" />
-	  <Reference Include="System.Web" />
+		<Reference Include="System.Configuration" />
+		<Reference Include="System.IdentityModel" />
+		<Reference Include="System.Web" />
 	</ItemGroup>
 	<Import Project="Build\Build.targets" />
 </Project>
