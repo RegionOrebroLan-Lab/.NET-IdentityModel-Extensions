@@ -24,5 +24,8 @@
 			<Link>CodeAnalysis\Dictionary.xml</Link>
 		</CodeAnalysisDictionary>
 	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="System.DirectoryServices.AccountManagement" />
+	</ItemGroup>
 	<Import Project="Build\Build.targets" />
 </Project>
